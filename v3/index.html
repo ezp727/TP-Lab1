@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Medallas - Juegos Olímpicos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Registro de Medallas - Juegos Olímpicos</h1>
+        <form id="medalForm" class="mt-4">
+            <div class="form-group">
+                <label for="country">País:</label>
+                <input type="text" class="form-control" id="country" name="country" required>
+            </div>
+            <div class="form-group">
+                <label for="gold">Oro:</label>
+                <input type="number" class="form-control" id="gold" name="gold" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="silver">Plata:</label>
+                <input type="number" class="form-control" id="silver" name="silver" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="bronze">Bronce:</label>
+                <input type="number" class="form-control" id="bronze" name="bronze" min="0" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+        </form>
+        <h2 class="text-center mt-5">Tabla de Medallas</h2>
+        <table class="table table-striped mt-3" id="medalTable">
+            <thead class="thead-dark">
+                <tr>
+                    <th>País</th>
+                    <th>Oro</th>
+                    <th>Plata</th>
+                    <th>Bronce</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas de medallas se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
